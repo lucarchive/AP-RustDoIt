@@ -1,0 +1,10 @@
+[package]
+name = "chart"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# Inherit the lint rules defined in the root Cargo.toml
+[lints]
+workspace = true
