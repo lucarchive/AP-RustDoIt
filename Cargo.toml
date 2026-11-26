@@ -1,0 +1,8 @@
+[workspace]
+members = ["chart", "ship", "admiralty"]
+# Feature resolver v2, see https://doc.rust-lang.org/cargo/reference/resolver.html#feature-resolver-version-2
+resolver = "2"
+
+# Mandatory (Main doc): no warnings from `cargo clippy -- -W clippy::pedantic`
+[workspace.lints.clippy]
+pedantic = "warn"
