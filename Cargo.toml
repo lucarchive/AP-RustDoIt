@@ -1,7 +1,11 @@
 [workspace]
-members = ["chart", "ship", "admiralty"]
+members = ["chart", "ship", "admiralty", "islands/*"]
 # Feature resolver v2, see https://doc.rust-lang.org/cargo/reference/resolver.html#feature-resolver-version-2
 resolver = "2"
+
+[workspace.dependencies]
+# The Working Group's common code
+ap-2026-common-code = { git = "https://github.com/SharedCode-UniTn-AP-2026/Common_Code-AP_2026" }
 
 # Mandatory (Main doc): no warnings from `cargo clippy -- -W clippy::pedantic`
 [workspace.lints.clippy]

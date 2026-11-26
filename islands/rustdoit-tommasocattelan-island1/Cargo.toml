@@ -1,0 +1,12 @@
+[package]
+name = "rustdoit-tommasocattelan-island1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# The Working Group's common code
+ap-2026-common-code.workspace = true
+
+# Inherit the lint rules defined once in the root Cargo.toml
+[lints]
+workspace = true
